@@ -1,0 +1,19 @@
+.line-chart {
+    height: 25vw;
+    width: 55%;
+    margin: 0 auto;
+}
+.line-chart canvas{
+    box-sizing: border-box;
+    display: block;
+    height: 289px;
+    width: 579px;
+} 
+@media (max-width: 500px) {
+   .line-chart canvas {
+    box-sizing: border-box;
+    display: block;
+    height: 275px;
+    width: 329px;
+   }
+}

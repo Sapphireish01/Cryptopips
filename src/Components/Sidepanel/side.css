@@ -1,0 +1,22 @@
+.side {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 2px 5px 0px rgba(225, 225, 223, 0.81);
+    /* height: min(90vh); */
+}
+.side ul {
+    padding: 20px 22px;
+}
+.side li {
+    display: flex;
+    padding: 18px 0;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: -webkit-center;
+}
+@media (max-width: 768px) {
+    .side {
+        display: none;
+    }
+}

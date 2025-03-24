@@ -1,0 +1,152 @@
+.home {
+    padding: 0 10px;
+    padding-bottom: 100px;
+}
+.hero {
+    margin: 80px auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.hero h1 {
+    font-size: max(4vw, 36px);
+    font-weight: 500;
+}
+.hero p {
+    width: 60%;
+}
+.crypto-table {
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.table-layout {
+    display: grid;
+    padding: 2px 4px;
+    align-items: center;
+    border-bottom: 1px solid #d8c79eb0;
+    grid-template-columns: 10% 30% 15% 20% 25%;
+}
+.table-layout p {
+    display: flex;
+    align-items: center;
+    padding: 10px 2px;
+    margin: 0 2px;
+    text-align: center;
+    width: fit-content;
+}
+.table-layout div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* .table-layout p:last-child {
+    text-align: end;
+} */
+ .item-card {
+    display: flex;
+ }
+.item-card img {
+    width: 25px;
+    height: 25px ;
+}
+.hero form {
+    padding: 8px; 
+    width: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.hero input {
+    font-family: 'Montserrat', sans-serif;
+    color: #484444;
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.hero button {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #484444;
+    border: none;
+    background: cornsilk;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.table-layout .green {
+    color: green;
+    text-align: center;
+}
+.table-layout .red {
+    color: red;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .hero form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-layout{
+        grid-template-columns: 0.5fr 2fr 1fr 1fr;
+    }
+    .market-cap{
+        display: none !important;
+        background-color: aqua;
+    }
+    .table-layout p {
+        font-size: 12px;
+    }
+    .hero form {
+        width: 50%;
+        padding: 4px;
+    }
+    .hero input {
+        font-size: 12px;
+    }
+    .hero button {
+        font-size: 12px;
+    }
+}
+@media (max-width: 500px) {    
+    .table-layout  {
+        font-size: 10px;
+    }
+    .table-layout p{
+        font-size: 7px;
+    }
+    .hero form {
+        padding: 4px;
+        width: 80%;
+    } 
+    .hero input {
+        width: 100px;
+        font-size: 12px;
+    }
+    .hero button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .item-card img{
+        width: 15px;
+        height: 15px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+}

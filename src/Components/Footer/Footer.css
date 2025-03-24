@@ -1,0 +1,15 @@
+.footer {
+    margin: auto;
+    max-width: 80%;
+    border-top: 1px solid rgb(100, 97, 86);
+    padding-top: 15px;
+    font-size: 13px;
+    position: relative;
+    height: 40px;
+}
+.foot {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
