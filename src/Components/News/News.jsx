@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import './news.css';
+import './News.css';
 import { useParams } from 'react-router-dom';
 import { CoinContext } from '../../context/CoinContext';
 
