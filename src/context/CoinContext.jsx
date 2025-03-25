@@ -1,8 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 
-export const CoinContext = createContext(); // Fixed name
+export const CoinContext = createContext();
 
-const CoinContextProvider = ({ children }) => { // Fixed props usage
+const CoinContextProvider = ({ children }) => {
     const [allCoin, setAllCoin] = useState([]);
     const [curr, setCurr] = useState({
         name: "usd",
@@ -24,7 +24,7 @@ const CoinContextProvider = ({ children }) => { // Fixed props usage
                 }
             );
             const data = await response.json();
-            setAllCoin(data); // Fixed response handling
+            setAllCoin(data);
         } catch (error) {
             console.error("Error fetching coin data:", error);
         }
@@ -42,7 +42,7 @@ const CoinContextProvider = ({ children }) => { // Fixed props usage
 
     return (
         <CoinContext.Provider value={contextValue}>
-            {children} {/* Fixed props.children issue */}
+            {children}
         </CoinContext.Provider>
     );
 };

@@ -48,9 +48,9 @@ const Coin = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 2500)); // 1.5s delay
+      await new Promise((resolve) => setTimeout(resolve, 2500)); 
       getCoinData();
-      await new Promise((resolve) => setTimeout(resolve, 2500)); // 1.5s delay
+      await new Promise((resolve) => setTimeout(resolve, 2500)); 
       getHistoricalData();
     };
     
